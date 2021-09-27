@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="anubhav.calculatorapp.History"
+    tools:context="com.bitlogicsolution.History"
     tools:showIn="@layout/activity_history">
 
     <Button
@@ -17,6 +17,9 @@
         android:layout_height="wrap_content"
         android:text="@string/deleteHistory"
         android:id="@+id/deleteHistory"
+        android:background="@drawable/gradient"
+        android:textColor="#fff"
+        style="@style/TextAppearance.AppCompat.Medium"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

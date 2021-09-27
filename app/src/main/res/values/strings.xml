@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalculatorApp</string>
+    <string name="app_name">Calculator</string>
     <string name="action_settings">Settings</string>
     <string name="stdCal">Standard Calculator</string>
     <string name="sciCal">Scientific Calculator</string>
@@ -8,11 +8,11 @@
     <string name="title_activity_standard_cal">StandardCal</string>
     <string name="title_activity_scientific_cal">ScientificCal</string>
     <string name="title_activity_unit_coverter">UnitCoverter</string>
-    <string name="clear">C</string>
+    <string name="clear">CE</string>
     <string name="backspace">⌫</string>
     <string name="divide">÷</string>
     <string name="sqrt">√</string>
-    <string name="cuberoot">\u221B</string>
+    <string name="cuberoot">CBRT</string>
     <string name="square">x²</string>
     <string name="cube">x\u00B3</string>
     <string name="tenpow">10\u207F</string>
@@ -74,7 +74,7 @@
     <string name="deleteHistory">Delete History</string>
     <string name="mode1">Degree</string>
     <string name="mode2">Radian</string>
-    <string name="toggle">SWITCH</string>
+    <string name="toggle">SHIFT</string>
     <string name="sin">sin</string>
     <string name="cos">cos</string>
     <string name="tan">tan</string>
@@ -85,5 +85,5 @@
     <string name="log">log</string>
     <string name="Mod">%</string>
     <string name="inverse">1/x</string>
-    <string name="factorial" >x!</string>>
+    <string name="factorial">x!</string>>
 </resources>

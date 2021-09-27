@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context="com.bitlogicsolution.ageCalculator">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dateofBirth"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="Date Of Birth" />
+
+        <EditText
+            android:id="@+id/startdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateofBirth"
+            android:layout_margin="5dp"
+            android:background="@drawable/startdate"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_date_range_white_24dp"
+            android:editable="false"
+            android:hint="10-04-2018"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/currentDate"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startdate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="Today Date" />
+
+        <EditText
+            android:id="@+id/today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currentDate"
+            android:layout_margin="5dp"
+            android:background="@drawable/startdate"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_date_range_white_24dp"
+            android:editable="false"
+            android:hint="10-04-2018"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/today"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/clear"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/colorPrimary"
+                android:text="Clear"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/calculate"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimary"
+                android:text="Calculate"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/age"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="Age is "
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+
+                android:gravity="center"
+                android:background="@drawable/age"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:text="YEARS"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/year"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="100dp"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:gravity="center"
+                android:background="@drawable/age"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:text="MONTH"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/month"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:background="@drawable/age"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:text="DAYS"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/days"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
